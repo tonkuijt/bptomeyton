@@ -13,5 +13,5 @@ The script will generate a series of files containing the startlist per serie, a
 Two versions have been made: An international version, and a Dutch version.
 
 TODO:
-- Find a way co convert Series based on the number of series and then self-generate the series
+- Find a way to convert Series based on the number of series and then self-generate the series
 - Find a way to make sure disciplines are filtered correctly, perhaps fill the Houding field in Baanplanner with the corresponding Meyton ID?
