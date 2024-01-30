@@ -14,6 +14,10 @@
 ## fijn, maar niet absoluut noodzakelijk want dat zou beperkend kunnen werken voor verspreiding.             ##
 ###############################################################################################################
 
+# To handle filenames with spaces in them
+SAVEIFS=$IFS
+IFS=$(echo -en "\n\b")
+
 # Check if there is an input argument given
 if [ -z ${1} ]; then
 	echo ""
@@ -92,3 +96,4 @@ rm -rf SERIES
 echo "Tarball gemaakt met de series er in:"
 tar -ztvf series-${SERIETIJD}.tgz
 
+IFS=$SAVEIFS
