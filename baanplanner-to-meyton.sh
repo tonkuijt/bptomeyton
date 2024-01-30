@@ -12,6 +12,9 @@
 ## Source recognition is nice, but it should not interfere with free use of this code.                       ##
 ###############################################################################################################
 
+SAVEIFS=$IFS
+IFS=$(echo -en "\n\b")
+
 # Check if there is an input argument given
 if [ -z ${1} ]; then
 	echo ""
@@ -92,3 +95,4 @@ rm -rf SERIES
 echo "Tarball created with the following contents:"
 tar -ztvf series-${SERIETIJD}.tgz
 
+IFS=$SAVEIFS
