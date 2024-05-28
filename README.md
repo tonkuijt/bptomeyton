@@ -1,7 +1,7 @@
 # bptomeyton
 Baanplanner to Meyton
 
-This is a simple Bash script that converts an export from baanplanner.eu to a Meyton starting list so baanplanner exports can be converted and used to feed the Meyton Startliste feature.
+This is a simple Bash script that converts an exported 'inschrijflijst' from baanplanner.eu to a Meyton starting list so baanplanner exports can be converted and used to feed the Meyton Startliste feature.
 
 This script makes several assumptions based on our situation:
 - Discipline is derived out of the Houding-variable and is a custom field on baanplanner.eu, so our disciplines are used for conversion
